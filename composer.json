@@ -1,0 +1,39 @@
+{
+  "type": "library",
+  "name": "shuguang/wechat-redis",
+  "homepage": "https://github.com/shuguang/wechat-redis",
+  "description": "WeChat platform and WeChat payment development tools",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "shuguang",
+      "email": "ifsg@qq.com",
+      "homepage": "http://bagesoft.cn"
+    }
+  ],
+  "keywords": [
+    "WeChat"
+  ],
+  "require": {
+    "php": ">=5.4",
+    "ext-xml": "*",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-bcmath": "*",
+    "ext-libxml": "*",
+    "ext-openssl": "*",
+    "ext-mbstring": "*",
+    "ext-simplexml": "*"
+  },
+  "autoload": {
+    "classmap": [
+      "We.php"
+    ],
+    "psr-4": {
+      "WePay\\": "WePay",
+      "WeChat\\": "WeChat",
+      "WeMini\\": "WeMini",
+      "AliPay\\": "AliPay"
+    }
+  }
+}
